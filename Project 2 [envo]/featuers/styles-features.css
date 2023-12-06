@@ -1,0 +1,289 @@
+/* This is my effect css effect-effect-effect */
+
+/* :root {
+    --main-section-ke-ander-height: 60vh;
+    --main-section-ke-ander-width: calc(var(--main-section-ke-ander-height) / 1);
+  }
+  
+  
+
+@property --rotate {
+    syntax: "<angle>";
+    initial-value: 132deg;
+    inherits: false;
+  }
+
+
+.main-section-ke-ander {
+    background: #191c29;
+    padding: 3px;
+    position: relative;
+    border-radius: 6px;
+    color: rgb(88 199 250 / 0%);
+    cursor: pointer;
+    font-family: cursive;
+  }
+  
+  .main-section-ke-ander:hover {
+    color: rgb(88 199 250 / 100%);
+    transition: color 1s;
+  }
+  .main-section-ke-ander:hover:before, .main-section-ke-ander:hover:after {
+    animation: none;
+    opacity: 0;
+  }
+  
+  
+  .main-section-ke-ander::before {
+    content: "";
+    width: 104%;
+    height: 102%;
+    border-radius: 8px;
+    background-image: linear-gradient(
+      var(--rotate)
+      , #5ddcff, #3c67e3 43%, #4e00c2);
+      position: absolute;
+      z-index: -1;
+      top: -1%;
+      left: -2%;
+      animation: spin 2.5s linear infinite;
+  }
+  
+  .main-section-ke-ander::after {
+    position: absolute;
+    content: "";
+    top: calc(var(--main-section-ke-ander-height) / 6);
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    transform: scale(0.8);
+    filter: blur(calc(var(--main-section-ke-ander-height) / 6));
+    background-image: linear-gradient(
+      var(--rotate)
+      , #5ddcff, #3c67e3 43%, #4e00c2);
+      opacity: 1;
+    transition: opacity .5s;
+    animation: spin 2.5s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      --rotate: 0deg;
+    }
+    100% {
+      --rotate: 360deg;
+    }
+  } */
+  
+/* effect-effect-effect-css end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* This is my regular css  main-main-main-css*/
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+    background-color: #f3f4f5;
+    /* Prevent horizontal scrollbar */
+}
+
+.navbar {
+
+   
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: -4px -4px 10px 3px;
+    background-image: linear-gradient(
+  45deg,
+  hsl(240deg 100% 20%) 5%,
+  hsl(224deg 100% 26%) 11%,
+  hsl(217deg 100% 30%) 22%,
+  hsl(211deg 100% 34%) 33%,
+  hsl(205deg 100% 36%) 44%,
+  hsl(199deg 100% 37%) 56%,
+  hsl(193deg 100% 38%) 67%,
+  hsl(186deg 100% 37%) 78%,
+  hsl(178deg 100% 38%) 89%,
+  hsl(172deg 97% 42%) 100%
+);
+}
+
+.menu-icon {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+
+.bar {
+    background-color: #fff;
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+}
+
+.navbar-items {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    padding: 8px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+.profile {
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: -75%;
+    /* Initially off-screen */
+    width: 75%;
+    height: 100%;
+    background-color: #072530f5;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: left 0.3s ease;
+    /* Add transition for smooth animation */
+}
+
+.mobile-menu.show {
+    left: 0;
+    /* Slide in when the show class is added */
+}
+
+.mobile-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mobile-menu li {
+    padding: 13px;
+    text-align: center;
+    /* border: 2px solid honeydew; */
+    border-bottom: 1px solid #474f5d8f;
+}
+
+.mobile-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+
+
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.content {
+    /* Add some padding to make space for the fixed footer */
+    padding-bottom: 60px;
+    /* Adjust as needed */
+}
+
+
+/* Your existing CSS code for navbar, footer, and content */
+
+.main-section {
+    border: 1px solid #dddddd00;
+    padding: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    /* Add transition for a smooth effect */
+}
+
+.main-section:hover {
+    transform: scale(1.03);
+    /* Optional: Enlarge the panel on hover */
+}
+
+.main-section h2 {
+    font-size: 1.5rem;
+    color:#050505;
+}
+
+.main-section p {
+    font-size: 1rem;
+    color: white;
+}
+
+.main-section-link {
+    text-decoration: none;
+    color: inherit;
+    /* Inherit the color from the parent */
+}
+
+.main-section-ke-ander {
+    border: 2px solid #ddd;
+    /* Border styling */
+    padding: 35px;
+    border-radius: 8px;
+    /* Optional: Add border radius for a rounded appearance */
+    cursor: pointer;
+    transition: transform 0.3s ease;    
+    box-shadow: 3px 3px rgb(0 0 0 / 20%);
+    padding-bottom: 185px;
+    padding-top: 0;
+    text-shadow: 1px 1px #141413b5;
+}
+
+
+.basic-section{
+    background-image: linear-gradient(rgb(4 24 30 / 0%),
+    rgb(80 12 12 / 53%)),url(alll-pollution.jpg);
+    background-size: cover;
+}
+.intermediate-section{
+    background-image:linear-gradient(rgb(4 24 30 / 0%),
+    rgb(7 53 49)),url(weather.jpg);
+    background-size: cover;
+}
+.advanced-section{
+    background-image: linear-gradient(rgb(4 24 30 / 0%),
+    rgb(6 15 9 / 64%)),url(environmental-disaster.jpg);
+    background-size: cover;
+}
+
+/* main-main-main-css */

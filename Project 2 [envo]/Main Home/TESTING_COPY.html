@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" id="mainStylesheet">
+    <title>Your Website</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Your website content goes here -->
+        <p>This is your website content.</p>
+        <button id="darkModeToggle">Toggle Dark Mode</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<script>
+    const darkModeToggle = document.getElementById('darkModeToggle');
+const mainStylesheet = document.getElementById('mainStylesheet');
+
+darkModeToggle.addEventListener('click', () => {
+    // Toggle dark mode by adding or removing the dark-mode class on the body
+    document.body.classList.toggle('dark-mode');
+
+    // Toggle the dark mode stylesheet
+    if (document.body.classList.contains('dark-mode')) {
+        // Add the dark mode stylesheet
+        addDarkModeStylesheet();
+    } else {
+        // Remove the dark mode stylesheet
+        removeDarkModeStylesheet();
+    }
+});
+
+function addDarkModeStylesheet() {
+    const darkModeStylesheet = document.createElement('link');
+    darkModeStylesheet.href = 'dark-mode.css'; // Path to your dark mode CSS file
+    darkModeStylesheet.rel = 'stylesheet';
+    darkModeStylesheet.id = 'darkModeStylesheet';
+    document.head.appendChild(darkModeStylesheet);
+}
+
+function removeDarkModeStylesheet() {
+    const darkModeStylesheet = document.getElementById('darkModeStylesheet');
+    if (darkModeStylesheet) {
+        darkModeStylesheet.remove();
+    }
+}
+
+</script>

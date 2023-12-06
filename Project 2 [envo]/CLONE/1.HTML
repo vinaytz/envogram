@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.2/css/all.css">
+    <link rel="stylesheet" href="dark.css">
+    <title>Your Website</title>
+
+    <!-- This is footer don't tuch u son of :) -->
+    <style>
+        .footer {position: fixed;bottom: 0;left: 0;right: 0;width: 100%;height: 55px;box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);background-color: #ffffff;display: flex;overflow-x: auto;}
+        .nav__link {display: flex;flex-direction: column;align-items: center;justify-content: center;flex-grow: 1;min-width: 50px;overflow: hidden;white-space: nowrap;font-family: sans-serif;font-size: 13px;color: #009578;text-decoration: none;-webkit-tap-highlight-color: transparent;transition: background-color 0.1s ease-in-out;}
+        .nav__link:hover {background-color: #ffffff;color: rgb(160, 18, 18);}
+        .nav__icon {font-size: 18px;}
+    </style>
+
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="menu-icon" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="navbar-items">
+            <input type="text" class="search-bar" placeholder="Search">
+            <div class="profile" onclick="toggleProfileMenu()">
+                     <i class="fa-duotone fa-user" style="font-size:29px"></i>
+                    <circle cx="12" cy="7" r="4"/>
+                    <path d="M5 12s1.5 2 3 2h8c1.5 0 3-2 3-2"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile-menu">
+        <button class="close-btn" onclick="toggleMenu()">Close</button>
+        <ul>
+            <li><a href="#">Item 1</a></li>
+            <li><a href="#">Item 2</a></li>
+            <li><a href="#">Item 3</a></li>
+            <li><a href="#">Item 4</a></li>
+            <li><a href="#">Item 5</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <a href="basic.html" class="main-section-link">
+            <section class="main-section">
+            <section class="main-section-ke-ander basic-section">
+                <h2>Basics of Environmental Studies</h2>
+                <p>Explore fundamental concepts in environmental studies.</p>
+                </section>
+            </section>
+        </a>
+
+        <!-- Section: Intermediate -->
+        <a href="intermediate.html" class="main-section-link">
+            <section class="main-section">
+            <section class="main-section-ke-ander intermediate-section">
+                
+                <h2>Intermediate Environmental Topics</h2>
+                <p>Dive deeper into intermediate-level environmental subjects.</p>
+            </section>
+            </section>
+        </a>
+        
+        <!-- Section: Advanced -->
+        <a href="advanced.html" class="main-section-link">
+            <section class="main-section">
+             <section class="main-section-ke-ander advanced-section">
+                <h2>Advanced Environmental Studies</h2>
+                <p>Discover advanced topics and research in environmental studies.</p>
+            </section>
+            </section>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">  
+        <a href="#" class="nav__link"><i aria-hidden="true" class="material-icons nav__icon fa fa-home" style="font-size:31px"></i><span class="nav__text">Home</span></a>
+        <a href="#" class="nav__link"> <i aria-hidden="true" class="fa-brands fa-monero" style="font-size:29px"></i><span class="nav__text">Fearure</span></a>
+        <a href="#" class="nav__link"><i aria-hidden="true" class="fa-regular fa-square-q" style="font-size:29px"></i><span class="nav__text">Quiz</span></a>
+        <a href="#" class="nav__link"><i aria-hidden="true" class="fa-solid fa-user" style="font-size:29px"></i><span class="nav__text">Profile</span></a>
+    </footer>
+
+
+    <!-- Your website content goes here -->
+    <script src="script.js"></script>
+</body>
+
+</html>

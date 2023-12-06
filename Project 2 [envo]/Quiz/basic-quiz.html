@@ -1,0 +1,277 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Environmental Studies Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .options button {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Let's start!</h1>
+
+<div id="quiz-container">
+    <div class="question" id="question1">
+        <h3>1. What is the primary cause of deforestation?</h3>
+        <div class="options">
+            <button onclick="checkAnswer('question1', 'option1')">A. Agricultural expansion</button>
+            <button onclick="checkAnswer('question1', 'option2')">B. Logging</button>
+            <button onclick="checkAnswer('question1', 'option3')">C. Urbanization</button>
+            <button onclick="checkAnswer('question1', 'option4')">D. Climate change</button>
+        </div>
+    </div>
+
+    <div class="question" id="question2">
+        <h3>2. Which gas is a major component of smog?</h3>
+        <div class="options">
+            <button onclick="checkAnswer('question2', 'option1')">A. Carbon Dioxide</button>
+            <button onclick="checkAnswer('question2', 'option2')">B. Sulfur Dioxide</button>
+            <button onclick="checkAnswer('question2', 'option3')">C. Nitrogen Oxide</button>
+            <button onclick="checkAnswer('question2', 'option4')">D. Methane</button>
+        </div>
+    </div>
+
+    <div class="question" id="question3">
+        <h3>3. Which of the following is a renewable energy source?</h3>
+        <div class="options">
+            <button onclick="checkAnswer('question3', 'option1')">A. Coal</button>
+            <button onclick="checkAnswer('question3', 'option2')">B. Solar power</button>
+            <button onclick="checkAnswer('question3', 'option3')">C. Natural gas</button>
+            <button onclick="checkAnswer('question3', 'option4')">D. Nuclear power</button>
+        </div>
+    </div>
+
+    <div class="question" id="question4">
+        <h3>4. What is the main cause of soil erosion?</h3>
+        <div class="options">
+            <button onclick="checkAnswer('question4', 'option1')">A. Deforestation</button>
+            <button onclick="checkAnswer('question4', 'option2')">B. Agricultural practices</button>
+            <button onclick="checkAnswer('question4', 'option3')">C. Industrial pollution</button>
+            <button onclick="checkAnswer('question4', 'option4')">D. Global warming</button>
+        </div>
+    </div>
+
+    <div class="question" id="question5">
+        <h3>5. What is the largest source of marine pollution?</h3>
+        <div class="options">
+            <button onclick="checkAnswer('question5', 'option1')">A. Oil spills</button>
+            <button onclick="checkAnswer('question5', 'option2')">B. Plastic waste</button>
+            <button onclick="checkAnswer('question5', 'option3')">C. Sewage discharge</button>
+            <button onclick="checkAnswer('question5', 'option4')">D. Industrial runoff</button>
+        </div>
+    </div>
+
+    <div class="question" id="question6">
+        <h3>6. Which gas is responsible for depletion of the ozone layer?</h3>
+        <div class="options">
+            <button onclick="checkAnswer('question6', 'option1')">A. Carbon Dioxide</button>
+            <button onclick="checkAnswer('question6', 'option2')">B. Chlorofluorocarbons (CFCs)</button>
+            <button onclick="checkAnswer('question6', 'option3')">C. Methane</button>
+            <button onclick="checkAnswer('question6', 'option4')">D. Nitrous Oxide</button>
+        </div>
+    </div>
+
+    <div class="question" id="question7">
+        <h3>7. What is the primary cause of water pollution in rivers?</h3>
+        <div class="options">
+            <button onclick="checkAnswer('question7', 'option1')">A. Agricultural runoff</button>
+            <button onclick="checkAnswer('question7', 'option2')">B. Industrial discharges</button>
+            <button onclick="checkAnswer('question7', 'option3')">C. Oil spills</button>
+            <button onclick="checkAnswer('question7', 'option4')">D. Nuclear waste</button>
+        </div>
+    </div>
+
+    <div class="question" id="question8">
+        <h3>8. Which of the following is a non-renewable resource?</h3>
+        <div class="options">
+            <button onclick="checkAnswer('question8', 'option1')">A. Wind energy</button>
+            <button onclick="checkAnswer('question8', 'option2')">B. Natural gas</button>
+            <button onclick="checkAnswer('question8', 'option3')">C. Biomass</button>
+            <button onclick="checkAnswer('question8', 'option4')">D. Geothermal energy</button>
+        </div>
+    </div>
+
+    <div class="question" id="question9">
+        <h3>9. Which species is endangered due to habitat loss?</h3>
+        <div class="options">
+            <button onclick="checkAnswer('question9', 'option1')">A. Bengal Tiger</button>
+            <button onclick="checkAnswer('question9', 'option2')">B. African Elephant</button>
+            <button onclick="checkAnswer('question9', 'option3')">C. Blue Whale</button>
+            <button onclick="checkAnswer('question9', 'option4')">D. Giant Panda</button>
+        </div>
+    </div>
+
+    <div class="question" id="question10">
+        <h3>10. What is the primary cause of air pollution in urban areas?</h3>
+        <div class="options">
+            <button onclick="checkAnswer('question10', 'option1')">A. Industrial emissions</button>
+            <button onclick="checkAnswer('question10', 'option2')">B. Vehicle exhaust</button>
+            <button onclick="checkAnswer('question10', 'option3')">C. Agricultural activities</button>
+            <button onclick="checkAnswer('question10', 'option4')">D. Deforestation</button>
+        </div>
+    </div>
+
+    <div class="question" id="question11">
+        <h3>11. What is the main cause of coral reef degradation?</h3>
+        <div class="options">
+            <button onclick="checkAnswer('question11', 'option1')">A. Overfishing</button>
+            <button onclick="checkAnswer('question11', 'option2')">B. Ocean acidification</button>
+            <button onclick="checkAnswer('question11', 'option3')">C. Global warming</button>
+            <button onclick="checkAnswer('question11', 'option4')">D. Industrial pollution</button>
+        </div>
+    </div>
+    
+    <div class="question" id="question12">
+        <h3>12. Which of the following is a greenhouse gas released during agricultural activities?</h3>
+        <div class="options">
+            <button onclick="checkAnswer('question12', 'option1')">A. Oxygen</button>
+            <button onclick="checkAnswer('question12', 'option2')">B. Carbon monoxide</button>
+            <button onclick="checkAnswer('question12', 'option3')">C. Methane</button>
+            <button onclick="checkAnswer('question12', 'option4')">D. Hydrogen</button>
+        </div>
+    </div>
+    
+    <!-- Add questions 13 to 20 similarly -->
+    
+    <div class="question" id="question13">
+        <h3>13. What is the purpose of a wildlife corridor?</h3>
+        <div class="options">
+            <button onclick="checkAnswer('question13', 'option1')">A. To protect endangered species</button>
+            <button onclick="checkAnswer('question13', 'option2')">B. To promote tourism</button>
+            <button onclick="checkAnswer('question13', 'option3')">C. To provide a shortcut for animals</button>
+            <button onclick="checkAnswer('question13', 'option4')">D. To prevent wildfires</button>
+        </div>
+    </div>
+    
+    <div class="question" id="question14">
+        <h3>14. Which type of pollution is caused by excessive use of fertilizers and pesticides in agriculture?</h3>
+        <div class="options">
+            <button onclick="checkAnswer('question14', 'option1')">A. Air pollution</button>
+            <button onclick="checkAnswer('question14', 'option2')">B. Soil pollution</button>
+            <button onclick="checkAnswer('question14', 'option3')">C. Water pollution</button>
+            <button onclick="checkAnswer('question14', 'option4')">D. Noise pollution</button>
+        </div>
+    </div>
+    
+    <div class="question" id="question15">
+        <h3>15. What is the primary component of plastic pollution in oceans?</h3>
+        <div class="options">
+            <button onclick="checkAnswer('question15', 'option1')">A. PET (Polyethylene Terephthalate)</button>
+            <button onclick="checkAnswer('question15', 'option2')">B. PVC (Polyvinyl Chloride)</button>
+            <button onclick="checkAnswer('question15', 'option3')">C. HDPE (High-Density Polyethylene)</button>
+            <button onclick="checkAnswer('question15', 'option4')">D. Styrofoam</button>
+        </div>
+    </div>
+    
+    <div class="question" id="question16">
+        <h3>16. Which renewable energy source harnesses the natural motion of tides?</h3>
+        <div class="options">
+            <button onclick="checkAnswer('question16', 'option1')">A. Wind power</button>
+            <button onclick="checkAnswer('question16', 'option2')">B. Solar power</button>
+            <button onclick="checkAnswer('question16', 'option3')">C. Tidal power</button>
+            <button onclick="checkAnswer('question16', 'option4')">D. Geothermal energy</button>
+        </div>
+    </div>
+    
+    <div class="question" id="question17">
+        <h3>17. What is the term for the gradual increase in the Earth's average temperature due to human activities?</h3>
+        <div class="options">
+            <button onclick="checkAnswer('question17', 'option1')">A. Greenhouse effect</button>
+            <button onclick="checkAnswer('question17', 'option2')">B. Ozone depletion</button>
+            <button onclick="checkAnswer('question17', 'option3')">C. Global warming</button>
+            <button onclick="checkAnswer('question17', 'option4')">D. Acid rain</button>
+        </div>
+    </div>
+    
+    <div class="question" id="question18">
+        <h3>18. Which organization is dedicated to the conservation of biodiversity worldwide?</h3>
+        <div class="options">
+            <button onclick="checkAnswer('question18', 'option1')">A. WWF (World Wide Fund for Nature)</button>
+            <button onclick="checkAnswer('question18', 'option2')">B. WHO (World Health Organization)</button>
+            <button onclick="checkAnswer('question18', 'option3')">C. UNESCO (United Nations Educational, Scientific and Cultural Organization)</button>
+            <button onclick="checkAnswer('question18', 'option4')">D. NASA (National Aeronautics and Space Administration)</button>
+        </div>
+    </div>
+    
+    <div class="question" id="question19">
+        <h3>19. What is the main source of indoor air pollution in households that use solid fuels for cooking?</h3>
+        <div class="options">
+            <button onclick="checkAnswer('question19', 'option1')">A. Tobacco smoke</button>
+            <button onclick="checkAnswer('question19', 'option2')">B. Radon gas</button>
+            <button onclick="checkAnswer('question19', 'option3')">C. Carbon monoxide</button>
+            <button onclick="checkAnswer('question19', 'option4')">D. Particulate matter</button>
+        </div>
+    </div>
+    
+    <div class="question" id="question20">
+        <h3>20. Which environmental issue is associated with the thinning of the ozone layer?</h3>
+        <div class="options">
+            <button onclick="checkAnswer('question20', 'option1')">A. Acid rain</button>
+            <button onclick="checkAnswer('question20', 'option2')">B. Desertification</button>
+            <button onclick="checkAnswer('question20', 'option3')">C. Ozone depletion</button>
+            <button onclick="checkAnswer('question20', 'option4')">D. Eutrophication</button>
+        </div>
+    </div>
+    
+
+</div
+
+>
+
+<script>
+    function checkAnswer(questionId, selectedOption) {
+        const correctAnswers = {
+            'question1': 'option2',
+            'question2': 'option3',
+            'question3': 'option2',
+            'question4': 'option1',
+            'question5': 'option2',
+            'question6': 'option2',
+            'question7': 'option1',
+            'question8': 'option2',
+            'question9': 'option4',
+            'question10': 'option2',
+            'question11': 'option2',
+            'question12': 'option3',
+            'question13': 'option1',
+            'question14': 'option2',
+            'question15': 'option2',
+            'question16': 'option3',
+            'question17': 'option3',
+            'question18': 'option1',
+            'question19': 'option3',
+            'question20': 'option3',
+            // Add correct answers for other questions
+            // ...
+        };
+
+        const questionElement = document.getElementById(questionId);
+        const selectedButton = document.getElementById(selectedOption);
+
+        if (selectedOption === correctAnswers[questionId]) {
+            questionElement.style.color = 'green';
+            selectedButton.style.backgroundColor = 'lightgreen';
+            alert('Correct!');
+        } else {
+            questionElement.style.color = 'red';
+            selectedButton.style.backgroundColor = 'lightcoral';
+            alert('Wrong!');    
+        }
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.2/css/all.css">
+    <!-- for darkmode -->
+    <!-- <link rel="stylesheet" href="dark-mode.css"> -->
+    <title>Play Quiz</title>
+
+    <!-- This is footer don't tuch u son of :) -->
+    <style>
+        .footer {position: fixed;bottom: 0;left: 0;right: 0;width: 100%;height: 55px;box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);background-color: #ffffff;display: flex;overflow-x: auto;}
+        .nav__link {display: flex;flex-direction: column;align-items: center;justify-content: center;flex-grow: 1;min-width: 50px;overflow: hidden;white-space: nowrap;font-family: sans-serif;font-size: 13px;color: #009578;text-decoration: none;-webkit-tap-highlight-color: transparent;transition: background-color 0.1s ease-in-out;}
+        .nav__link:hover {background-color: #ffffff;color: rgb(160, 18, 18);}
+        .nav__icon {font-size: 18px;}.main-icon{text-shadow:1px 1px 2px #062105b5;}
+        </style>
+
+<style>
+/* This is my regular css  main-main-main-css*/
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+    background-color: #f3f4f5;
+    /* Prevent horizontal scrollbar */
+}
+
+.navbar {
+
+   
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: -4px -4px 10px 3px;
+    background-image: linear-gradient(
+  45deg,
+  hsl(240deg 100% 20%) 5%,
+  hsl(224deg 100% 26%) 11%,
+  hsl(217deg 100% 30%) 22%,
+  hsl(211deg 100% 34%) 33%,
+  hsl(205deg 100% 36%) 44%,
+  hsl(199deg 100% 37%) 56%,
+  hsl(193deg 100% 38%) 67%,
+  hsl(186deg 100% 37%) 78%,
+  hsl(178deg 100% 38%) 89%,
+  hsl(172deg 97% 42%) 100%
+);
+}
+
+.menu-icon {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+
+.bar {
+    background-color: #fff;
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+}
+
+.navbar-items {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    padding: 8px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+.profile {
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: -75%;
+    /* Initially off-screen */
+    width: 75%;
+    height: 100%;
+    background-color: #072530f5;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: left 0.3s ease;
+    /* Add transition for smooth animation */
+}
+
+.mobile-menu.show {
+    left: 0;
+    /* Slide in when the show class is added */
+}
+
+.mobile-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mobile-menu li {
+    padding: 13px;
+    text-align: center;
+    /* border: 2px solid honeydew; */
+    border-bottom: 1px solid #474f5d8f;
+}
+
+.mobile-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+
+
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.content {
+    /* Add some padding to make space for the fixed footer */
+    padding-bottom: 60px;
+    /* Adjust as needed */
+}
+
+
+/* Your existing CSS code for navbar, footer, and content */
+
+.main-section {
+    border: 1px solid #dddddd00;
+    padding: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    /* Add transition for a smooth effect */
+}
+
+.main-section:hover {
+    transform: scale(1.03);
+    /* Optional: Enlarge the panel on hover */
+}
+
+.main-section h2 {
+    font-size: 1.5rem;
+    color:#050505;
+}
+
+.main-section p {
+    font-size: 1rem;
+    color: white;
+}
+
+.main-section-link {
+    text-decoration: none;
+    color: inherit;
+    /* Inherit the color from the parent */
+}
+
+.main-section-ke-ander {
+    border: 2px solid #ddd;
+    /* Border styling */
+    padding: 20px;
+    border-radius: 8px;
+    /* Optional: Add border radius for a rounded appearance */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    box-shadow: 3px 3px rgb(0 0 0 / 20%);
+}
+
+
+.basic-section{
+    background-image: linear-gradient(rgb(4 24 30 / 0%),
+    rgb(25 192 193 / 53%)),url(alll-pollution.jpg);
+    background-size: cover;
+}
+.intermediate-section{
+    background-image:linear-gradient(rgb(4 24 30 / 0%),
+    rgb(79 9 128 / 49%)),url(students.jpg);
+    background-size: cover;
+}
+.advanced-section{
+    background-image:linear-gradient(rgb(4 24 30 / 0%),
+    rgb(212 0 0 / 29%)),url(experts.jpg);
+    background-size: cover;
+}
+
+/* main-main-main-css */
+</style>
+
+</head>
+
+<body>
+
+    <script src="script.js"></script>
+    <div class="navbar">
+        <div class="menu-icon" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="navbar-items">
+            <input type="text" class="search-bar" placeholder="Search">
+            <div class="profile" onclick="toggleProfileMenu()">
+                <i class="fa-duotone fa-user" style="font-size:29px"></i>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Define toggleMenu function
+        function toggleMenu() {
+            // Your toggleMenu implementation
+            console.log('toggleMenu clicked');
+        }
+    
+        // Define toggleProfileMenu function
+        function toggleProfileMenu() {
+            // Your toggleProfileMenu implementation
+            console.log('toggleProfileMenu clicked');
+        }
+    </script>
+    
+
+    <div class="mobile-menu">
+        <button class="close-btn" onclick="toggleMenu()">
+        <i class="fa-solid fa-rectangle-xmark"  style="font-size:29px"></i></button>
+        <ul>
+            <li></li>   
+            <li><a href="#">Weather</a></li>
+            <li><a href="#">Air Pollution Map</a></li>
+            <li><a href="#">Air Pollution Globe Map</a></li>
+            <li><a href="#">Air Pollution</a></li>
+            <li><a href="#">Water Pollution</a></li>
+            <li><a href="#">Noise Pollution</a></li>
+            <li><a href="#">Play Basic Quiz</a></li>
+            <li><a href="#">Play Intermediate Quiz</a></li>
+            <li><a href="#">Play Advanced Quiz</a></li>
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <a href="basic-quiz.html" class="main-section-link">
+            <section class="main-section">
+            <section class="main-section-ke-ander basic-section">
+                <h2>Quiz For Kids</h2>
+                </section>
+            </section>
+        </a>
+
+        <!-- Section: Intermediate -->
+        <a href="collage-quiz.html" class="main-section-link">
+            <section class="main-section">
+            <section class="main-section-ke-ander intermediate-section">
+                
+                <h2>Quiz for students</h2>
+                     </section>
+            </section>
+        </a>
+        
+        <!-- Section: Advanced -->
+        <a href="expert-quiz.html" class="main-section-link">
+            <section class="main-section">
+             <section class="main-section-ke-ander advanced-section">
+                <h2>Quiz for Profetionals</h2>
+            </section>
+            </section>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">  
+        <a href="#" class="nav__link"><i aria-hidden="true" class="main-icon material-icons nav__icon fa fa-home" style="font-size:31px"></i><span class="nav__text">Home</span></a>
+        <a href="#" class="nav__link"> <i aria-hidden="true" class="main-icon fa-brands fa-monero" style="font-size:29px"></i><span class="nav__text">Fearure</span></a>
+        <a href="#" class="nav__link"><i aria-hidden="true" class="main-icon fa-regular fa-square-q" style="font-size:29px"></i><span class="nav__text">Quiz</span></a>
+        <a href="#" class="nav__link"><i aria-hidden="true" class="main-icon fa-solid fa-user" style="font-size:29px"></i><span class="nav__text">Profile</span></a>
+    </footer>
+
+
+    <!-- Your website content goes here -->
+</body>
+
+</html>
+
+

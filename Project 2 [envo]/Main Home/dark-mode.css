@@ -1,0 +1,81 @@
+/* This is my effect css effect-effect-effect */
+
+:root {
+    --main-section-ke-ander-height: 60vh;
+    --main-section-ke-ander-width: calc(var(--main-section-ke-ander-height) / 1);
+  }
+  
+  
+
+@property --rotate {
+    syntax: "<angle>";
+    initial-value: 132deg;
+    inherits: false;
+  }
+
+
+.main-section-ke-ander {
+    background: #191c29;
+    padding: 3px;
+    position: relative;
+    border-radius: 6px;
+    color: rgb(88 199 250 / 0%);
+    cursor: pointer;
+    font-family: cursive;
+  }
+  
+  .main-section-ke-ander:hover {
+    color: rgb(88 199 250 / 100%);
+    transition: color 1s;
+  }
+  .main-section-ke-ander:hover:before, .main-section-ke-ander:hover:after {
+    animation: none;
+    opacity: 0;
+  }
+  
+  
+  .main-section-ke-ander::before {
+    content: "";
+    width: 104%;
+    height: 102%;
+    border-radius: 8px;
+    background-image: linear-gradient(
+      var(--rotate)
+      , #5ddcff, #3c67e3 43%, #4e00c2);
+      position: absolute;
+      z-index: -1;
+      top: -1%;
+      left: -2%;
+      animation: spin 2.5s linear infinite;
+  }
+  
+  .main-section-ke-ander::after {
+    position: absolute;
+    content: "";
+    top: calc(var(--main-section-ke-ander-height) / 6);
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    transform: scale(0.8);
+    filter: blur(calc(var(--main-section-ke-ander-height) / 6));
+    background-image: linear-gradient(
+      var(--rotate)
+      , #5ddcff, #3c67e3 43%, #4e00c2);
+      opacity: 1;
+    transition: opacity .5s;
+    animation: spin 2.5s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      --rotate: 0deg;
+    }
+    100% {
+      --rotate: 360deg;
+    }
+  }
+  
+/* effect-effect-effect-css end */

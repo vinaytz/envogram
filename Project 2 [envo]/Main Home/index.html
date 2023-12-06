@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.2/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- for darkmode -->
+    <!-- <link rel="stylesheet" href="dark-mode.css"> -->
+    <title>Your Website</title>
+
+    <!-- This is footer don't tuch u son of :) -->
+    <style>
+        .footer {position: fixed;bottom: 0;left: 0;right: 0;width: 100%;height: 55px;box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);background-color: #212121;display: flex;overflow-x: auto;}
+        .nav__link {display: flex;flex-direction: column;align-items: center;justify-content: center;flex-grow: 1;min-width: 50px;overflow: hidden;white-space: nowrap;font-family: sans-serif;font-size: 13px;color:#10ab8d;text-decoration: none;-webkit-tap-highlight-color: transparent;transition: background-color 0.1s ease-in-out;}
+        .nav__link:hover {background-color: #ffffff;color: rgb(160, 18, 18);}
+        .nav__icon {font-size: 18px;}.main-icon{text-shadow:1px 1px 2px #062105b5;}
+        </style>
+
+</head>
+
+<body>
+
+    <script src="script.js"></script>
+    <div class="navbar">
+        <div class="menu-icon" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="navbar-items">
+            <input type="text" class="search-bar" placeholder="Search">
+            <div class="profile" onclick="toggleProfileMenu()">
+                <i class="fa-duotone fa-user" style="font-size:29px"></i>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Define toggleMenu function
+        function toggleMenu() {
+            // Your toggleMenu implementation
+            console.log('toggleMenu clicked');
+        }
+    
+        // Define toggleProfileMenu function
+        function toggleProfileMenu() {
+            // Your toggleProfileMenu implementation
+            console.log('toggleProfileMenu clicked');
+        }
+    </script>
+    
+
+    <div class="mobile-menu">
+        <button class="close-btn" onclick="toggleMenu()">
+        <i class="fa-solid fa-rectangle-xmark"  style="font-size:29px"></i></button>
+        <ul>
+            <li></li>   
+            <li><a href="#">Weather</a></li>
+            <li><a href="#">Air Pollution Map</a></li>
+            <li><a href="#">Air Pollution Globe Map</a></li>
+            <li><a href="#">Air Pollution</a></li>
+            <li><a href="#">Water Pollution</a></li>
+            <li><a href="#">Noise Pollution</a></li>
+            <li><a href="#">Play Basic Quiz</a></li>
+            <li><a href="#">Play Intermediate Quiz</a></li>
+            <li><a href="#">Play Advanced Quiz</a></li>
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <a href="basic\basic-read.html" class="main-section-link">
+            <section class="main-section">
+            <section class="main-section-ke-ander basic-section">
+                <h2>Basics of Environmental Studies</h2>
+                <p>Explore fundamental concepts in environmental studies.</p>
+                </section>
+            </section>
+        </a>
+
+        <!-- Section: Intermediate -->
+        <a href="intermediate.html" class="main-section-link">
+            <section class="main-section">
+            <section class="main-section-ke-ander intermediate-section">
+                
+                <h2>Intermediate Environmental Topics</h2>
+                <p>Dive deeper into intermediate-level environmental subjects.</p>
+            </section>
+            </section>
+        </a>
+        
+        <!-- Section: Advanced -->
+        <a href="advanced.html" class="main-section-link">
+            <section class="main-section">
+             <section class="main-section-ke-ander advanced-section">
+                <h2>Advanced Environmental Studies</h2>
+                <p>Discover advanced topics and research in environmental studies.</p>
+            </section>
+            </section>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">  
+        <a href="#" class="nav__link"><i aria-hidden="true" class="main-icon material-icons nav__icon fa fa-home" style="font-size:31px"></i><span class="nav__text">Home</span></a>
+        <a href="featuers\index-features.html" class="nav__link"> <i aria-hidden="true" class="main-icon fa-brands fa-monero" style="font-size:29px"></i><span class="nav__text">Fearure</span></a>
+        <a href="Quiz\index-quiz.html" class="nav__link"><i aria-hidden="true" class="main-icon fa-regular fa-square-q" style="font-size:29px"></i><span class="nav__text">Quiz</span></a>
+        <a href="profile\index-profile.html" class="nav__link"><i aria-hidden="true" class="main-icon fa-solid fa-user" style="font-size:29px"></i><span class="nav__text">Profile</span></a>
+    </footer>
+
+
+    <!-- Your website content goes here -->
+</body>
+
+</html>
+
+

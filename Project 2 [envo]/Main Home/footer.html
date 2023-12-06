@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.2/css/all.css">
+
+
+    <title>Document</title>
+    <style>
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 55px;
+            box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+            background-color: #ffffff;
+            display: flex;
+            overflow-x: auto;
+        }
+
+        .nav__link {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-grow: 1;
+            min-width: 50px;
+            overflow: hidden;
+            white-space: nowrap;
+            font-family: sans-serif;
+            font-size: 13px;
+            color: #009578;
+            text-decoration: none;
+            -webkit-tap-highlight-color: transparent;
+            transition: background-color 0.1s ease-in-out;
+        }
+
+        .nav__link:hover {
+            background-color: #ffffff;
+            color: rgb(160, 18, 18);
+        }
+
+        .nav__icon {
+            font-size: 18px;
+        }
+
+        .main-icon{
+            text-shadow:1px 1px 2px #062105b5;
+        }
+    </style>
+
+</head>
+
+<body>
+
+ <footer class="footer">  
+        <a href="#" class="nav__link"><i aria-hidden="true" class=" main-icon material-icons nav__icon fa fa-home" style="font-size:31px"></i><span class="nav__text">Home</span></a>
+        <a href="#" class="nav__link"> <i aria-hidden="true" class=" main-icon fa-brands fa-monero" style="font-size:29px"></i><span class="nav__text">Fearure</span></a>
+        <a href="#" class="nav__link"><i aria-hidden="true" class=" main-icon fa-regular fa-square-q" style="font-size:29px"></i><span class="nav__text">Quiz</span></a>
+        <a href="#" class="nav__link"><i aria-hidden="true" class=" main-icon fa-solid fa-user" style="font-size:29px"></i><span class="nav__text">Profile</span></a>
+    </footer>
+</body>
+
+</html>
